@@ -1,2 +1,13 @@
-Yeaaaaahhhhh
-Congratulation! Your second GitHub Actions workflow executed successfully
+name: Hello World Workflow
+
+on:
+  push:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Display Welcome Message
+        run: echo "Congratulation! Your second GitHub Actions workflow executed successfully"
